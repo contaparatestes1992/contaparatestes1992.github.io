@@ -1,0 +1,11 @@
+@mixin reset-list($margin: 0, $padding: 0, $estilo: none) {
+  margin: $margin;
+  padding: $padding;
+  list-style: $estilo;
+}
+
+@mixin reset-anchor($color: white, $display: block, $decoration: none) {
+  color: $color;
+  display: $display;
+  text-decoration: none;
+}
