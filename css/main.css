@@ -274,7 +274,7 @@ body {
     z-index: 1000;
   }
 }
-@media (min-width: 350px) and (max-width: 499px) {
+@media (min-width: 300px) and (max-width: 499px) {
   .home .container .navbar .menu {
     display: none;
   }
@@ -349,5 +349,8 @@ body {
   .home .container .nav-submenu .menu-oculto li:hover .submenu {
     display: block;
     z-index: 1000;
+  }
+  .services .services-box {
+    width: 91.5%;
   }
 }/*# sourceMappingURL=main.css.map */
