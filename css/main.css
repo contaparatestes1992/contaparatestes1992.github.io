@@ -335,7 +335,7 @@ body {
     font-size: 16px;
     width: 70%;
   }
-  .contacts .social-links .links img {
+  .contacts .social-links .links span {
     display: none;
   }
 }
@@ -422,9 +422,9 @@ body {
     width: 70%;
   }
   .contacts {
-    padding: 100px 30px;
+    padding: 30px 30px;
   }
-  .contacts .social-links .links img {
+  .contacts .social-links .links span {
     display: none;
   }
 }
@@ -516,9 +516,11 @@ body {
     width: 70%;
   }
   .contacts {
-    padding: 100px 10px 10px 10px;
+    padding: 30px 10px 10px 10px;
   }
-  .contacts .social-links .links img {
+  .contacts .social-links .links span {
     display: none;
+    font-size: 16px;
+    letter-spacing: -1px;
   }
 }/*# sourceMappingURL=main.css.map */
