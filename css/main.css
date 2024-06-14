@@ -8,6 +8,23 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(1px, 1px);
+  }
+  50% {
+    transform: translate(0, 2px);
+  }
+  75% {
+    transform: translate(-2px, 2px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
 .home .container {
   width: 100%;
   height: 100vh;
@@ -28,6 +45,8 @@ body {
   z-index: 1000;
   margin-right: 20px;
   margin-bottom: 20px;
+  animation: shake 1s infinite;
+  animation-duration: 1s;
 }
 .home .container .about {
   width: 30%;
@@ -215,6 +234,47 @@ body {
   color: white;
 }
 
+.contacts {
+  background-color: #39372a;
+  width: 96%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  padding: 10px 100px 100px 100px;
+  border-radius: 10px;
+  position: relative;
+}
+.contacts h2 {
+  margin: 20px auto;
+}
+.contacts .social-links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.contacts .social-links .links {
+  text-decoration: underline;
+}
+.contacts .social-links .links img {
+  width: 25px;
+}
+.contacts .social-links .links span a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+.contacts .social-links .links:last-of-type {
+  margin-bottom: -4px;
+  padding-bottom: 50px;
+}
+.contacts .social-links .copyright {
+  position: absolute;
+  bottom: 20px;
+  width: 760px;
+  margin-left: -380px;
+  left: 50%;
+}
+
 @media (min-width: 800px) and (max-width: 1228px) {
   .home .container .about {
     margin-top: -80px;
@@ -275,8 +335,11 @@ body {
     font-size: 16px;
     width: 70%;
   }
+  .contacts .social-links .links img {
+    display: none;
+  }
 }
-@media (min-width: 500px) and (max-width: 700px) {
+@media (min-width: 501px) and (max-width: 700px) {
   .home .container .navbar .menu {
     display: none;
   }
@@ -358,8 +421,14 @@ body {
     font-size: 14px;
     width: 70%;
   }
+  .contacts {
+    padding: 100px 30px;
+  }
+  .contacts .social-links .links img {
+    display: none;
+  }
 }
-@media (min-width: 300px) and (max-width: 499px) {
+@media (min-width: 300px) and (max-width: 500px) {
   .home .container .navbar .menu {
     display: none;
   }
@@ -445,5 +514,11 @@ body {
   .delivery h2 {
     font-size: 14px;
     width: 70%;
+  }
+  .contacts {
+    padding: 100px 10px 10px 10px;
+  }
+  .contacts .social-links .links img {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
