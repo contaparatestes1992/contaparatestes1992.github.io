@@ -236,7 +236,8 @@ body {
     gap: 30px;
   }
   .delivery h2 {
-    display: none;
+    font-size: 20px;
+    width: 70%;
   }
 }
 @media (min-width: 701px) and (max-width: 890px) {
@@ -271,7 +272,8 @@ body {
     display: none;
   }
   .delivery h2 {
-    display: none;
+    font-size: 16px;
+    width: 70%;
   }
 }
 @media (min-width: 500px) and (max-width: 700px) {
@@ -353,7 +355,8 @@ body {
     z-index: 1000;
   }
   .delivery h2 {
-    display: none;
+    font-size: 14px;
+    width: 70%;
   }
 }
 @media (min-width: 300px) and (max-width: 499px) {
@@ -440,6 +443,7 @@ body {
     margin: 0 auto;
   }
   .delivery h2 {
-    display: none;
+    font-size: 14px;
+    width: 70%;
   }
 }/*# sourceMappingURL=main.css.map */
