@@ -144,6 +144,77 @@
   }
 }
 
+.delivery {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  color: rgb(6, 86, 6);
+  h2 {
+    background-color: rgb(6, 86, 6);
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px 20px;
+    a {
+      @include reset-anchor;
+    }
+  }
+  .price-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    .price-product {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      width: 370px;
+      height: 200px;
+      border: 1px solid black;
+      margin: 0 auto;
+      margin-top: 20px;
+      border-radius: 20px;
+      &:first-child {
+        background-image: url(../images/prices-pamonha.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &:nth-child(2) {
+        background-image: url(../images/prices-curau.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &:nth-child(3) {
+        background-image: url(../images/prices-cuscuz.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &:nth-child(4) {
+        background-image: url(../images/prices-canjica.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &:nth-child(5) {
+        background-image: url(../images/prices-milho.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &:last-child {
+        background-image: url(../images/prices-bolo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .head-price {
+        background-color: green;
+        border-radius: 60px 20px 60px 20px;
+        padding: 40px;
+        color: white;
+      }
+    }
+  }
+}
+
 // media queries home
 
 @media (min-width: 800px) and (max-width: 1228px) {
@@ -174,6 +245,11 @@
   .services {
     .services-box {
       gap: 30px;
+    }
+  }
+  .delivery {
+    h2 {
+      display: none;
     }
   }
 }
@@ -215,6 +291,11 @@
           }
         }
       }
+    }
+  }
+  .delivery {
+    h2 {
+      display: none;
     }
   }
 }
@@ -300,6 +381,11 @@
           }
         }
       }
+    }
+  }
+  .delivery {
+    h2 {
+      display: none;
     }
   }
 }
@@ -390,6 +476,13 @@
   .services {
     .services-box {
       width: 91.5%;
+    }
+  }
+  .delivery {
+    width: 90%;
+    margin: 0 auto;
+    h2 {
+      display: none;
     }
   }
 }

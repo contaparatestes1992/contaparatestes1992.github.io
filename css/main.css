@@ -142,6 +142,79 @@ body {
   font-size: 20px;
 }
 
+.delivery {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  color: rgb(6, 86, 6);
+}
+.delivery h2 {
+  background-color: rgb(6, 86, 6);
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.delivery h2 a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+.delivery .price-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+.delivery .price-box .price-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 370px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.delivery .price-box .price-product:first-child {
+  background-image: url(../images/prices-pamonha.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.delivery .price-box .price-product:nth-child(2) {
+  background-image: url(../images/prices-curau.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.delivery .price-box .price-product:nth-child(3) {
+  background-image: url(../images/prices-cuscuz.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.delivery .price-box .price-product:nth-child(4) {
+  background-image: url(../images/prices-canjica.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.delivery .price-box .price-product:nth-child(5) {
+  background-image: url(../images/prices-milho.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.delivery .price-box .price-product:last-child {
+  background-image: url(../images/prices-bolo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.delivery .price-box .price-product .head-price {
+  background-color: green;
+  border-radius: 60px 20px 60px 20px;
+  padding: 40px;
+  color: white;
+}
+
 @media (min-width: 800px) and (max-width: 1228px) {
   .home .container .about {
     margin-top: -80px;
@@ -161,6 +234,9 @@ body {
   }
   .services .services-box {
     gap: 30px;
+  }
+  .delivery h2 {
+    display: none;
   }
 }
 @media (min-width: 701px) and (max-width: 890px) {
@@ -192,6 +268,9 @@ body {
   }
   .home .container .navbar .menu .logo {
     margin-top: 10px;
+    display: none;
+  }
+  .delivery h2 {
     display: none;
   }
 }
@@ -273,6 +352,9 @@ body {
     display: block;
     z-index: 1000;
   }
+  .delivery h2 {
+    display: none;
+  }
 }
 @media (min-width: 300px) and (max-width: 499px) {
   .home .container .navbar .menu {
@@ -352,5 +434,12 @@ body {
   }
   .services .services-box {
     width: 91.5%;
+  }
+  .delivery {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .delivery h2 {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
